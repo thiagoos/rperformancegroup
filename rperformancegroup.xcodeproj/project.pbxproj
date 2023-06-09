@@ -30,7 +30,20 @@
 		BC73C9862A33BE3900309982 /* UserDetailHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C9852A33BE3900309982 /* UserDetailHeader.swift */; };
 		BC73C9882A33BE4600309982 /* UserDetailCardInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C9872A33BE4600309982 /* UserDetailCardInformation.swift */; };
 		BC73C98A2A33BE5C00309982 /* RepoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C9892A33BE5C00309982 /* RepoTableViewCell.swift */; };
+		BC73C9922A33C02000309982 /* rperformancegroupAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C9912A33C02000309982 /* rperformancegroupAPITests.swift */; };
+		BC73C9992A33C07500309982 /* rperformancegroupUsersModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C9982A33C07500309982 /* rperformancegroupUsersModelTests.swift */; };
+		BC73C99B2A33C3DE00309982 /* rperformancegroupUserDetailModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC73C99A2A33C3DE00309982 /* rperformancegroupUserDetailModelTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC73C9932A33C02000309982 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC3281332A33B9700024AEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC32813A2A33B9700024AEC4;
+			remoteInfo = rperformancegroup;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		BC32813B2A33B9700024AEC4 /* rperformancegroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rperformancegroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -58,10 +71,21 @@
 		BC73C9852A33BE3900309982 /* UserDetailHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailHeader.swift; sourceTree = "<group>"; };
 		BC73C9872A33BE4600309982 /* UserDetailCardInformation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailCardInformation.swift; sourceTree = "<group>"; };
 		BC73C9892A33BE5C00309982 /* RepoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepoTableViewCell.swift; sourceTree = "<group>"; };
+		BC73C98F2A33C02000309982 /* rperformancegroupTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rperformancegroupTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC73C9912A33C02000309982 /* rperformancegroupAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rperformancegroupAPITests.swift; sourceTree = "<group>"; };
+		BC73C9982A33C07500309982 /* rperformancegroupUsersModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rperformancegroupUsersModelTests.swift; sourceTree = "<group>"; };
+		BC73C99A2A33C3DE00309982 /* rperformancegroupUserDetailModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rperformancegroupUserDetailModelTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		BC3281382A33B9700024AEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC73C98C2A33C02000309982 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -75,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				BC32813D2A33B9700024AEC4 /* rperformancegroup */,
+				BC73C9902A33C02000309982 /* rperformancegroupTests */,
 				BC32813C2A33B9700024AEC4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				BC32813B2A33B9700024AEC4 /* rperformancegroup.app */,
+				BC73C98F2A33C02000309982 /* rperformancegroupTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,6 +232,16 @@
 			path = Helper;
 			sourceTree = "<group>";
 		};
+		BC73C9902A33C02000309982 /* rperformancegroupTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC73C9912A33C02000309982 /* rperformancegroupAPITests.swift */,
+				BC73C9982A33C07500309982 /* rperformancegroupUsersModelTests.swift */,
+				BC73C99A2A33C3DE00309982 /* rperformancegroupUserDetailModelTests.swift */,
+			);
+			path = rperformancegroupTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -226,6 +262,24 @@
 			productReference = BC32813B2A33B9700024AEC4 /* rperformancegroup.app */;
 			productType = "com.apple.product-type.application";
 		};
+		BC73C98E2A33C02000309982 /* rperformancegroupTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC73C9952A33C02000309982 /* Build configuration list for PBXNativeTarget "rperformancegroupTests" */;
+			buildPhases = (
+				BC73C98B2A33C02000309982 /* Sources */,
+				BC73C98C2A33C02000309982 /* Frameworks */,
+				BC73C98D2A33C02000309982 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC73C9942A33C02000309982 /* PBXTargetDependency */,
+			);
+			name = rperformancegroupTests;
+			productName = rperformancegroupTests;
+			productReference = BC73C98F2A33C02000309982 /* rperformancegroupTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -238,6 +292,10 @@
 				TargetAttributes = {
 					BC32813A2A33B9700024AEC4 = {
 						CreatedOnToolsVersion = 14.2;
+					};
+					BC73C98E2A33C02000309982 = {
+						CreatedOnToolsVersion = 14.2;
+						TestTargetID = BC32813A2A33B9700024AEC4;
 					};
 				};
 			};
@@ -255,6 +313,7 @@
 			projectRoot = "";
 			targets = (
 				BC32813A2A33B9700024AEC4 /* rperformancegroup */,
+				BC73C98E2A33C02000309982 /* rperformancegroupTests */,
 			);
 		};
 /* End PBXProject section */
@@ -266,6 +325,13 @@
 			files = (
 				BC32814B2A33B9750024AEC4 /* LaunchScreen.storyboard in Resources */,
 				BC3281482A33B9750024AEC4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC73C98D2A33C02000309982 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,7 +366,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		BC73C98B2A33C02000309982 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC73C9922A33C02000309982 /* rperformancegroupAPITests.swift in Sources */,
+				BC73C9992A33C07500309982 /* rperformancegroupUsersModelTests.swift in Sources */,
+				BC73C99B2A33C3DE00309982 /* rperformancegroupUserDetailModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC73C9942A33C02000309982 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC32813A2A33B9700024AEC4 /* rperformancegroup */;
+			targetProxy = BC73C9932A33C02000309982 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		BC3281492A33B9750024AEC4 /* LaunchScreen.storyboard */ = {
@@ -480,6 +564,40 @@
 			};
 			name = Release;
 		};
+		BC73C9962A33C02000309982 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thiagosoares.rperformancegroupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rperformancegroup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rperformancegroup";
+			};
+			name = Debug;
+		};
+		BC73C9972A33C02000309982 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.thiagosoares.rperformancegroupTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rperformancegroup.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rperformancegroup";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -497,6 +615,15 @@
 			buildConfigurations = (
 				BC3281502A33B9750024AEC4 /* Debug */,
 				BC3281512A33B9750024AEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC73C9952A33C02000309982 /* Build configuration list for PBXNativeTarget "rperformancegroupTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC73C9962A33C02000309982 /* Debug */,
+				BC73C9972A33C02000309982 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
